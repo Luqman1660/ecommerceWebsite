@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products-details-3 - RedStore</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=League+Spartan:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" 
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="navbar">
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" width="125px"></a>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+	         <li><a href="index.html">Home</a></li>
+			 <li><a href="shirt.html">Shirt</a></li>
+			 <li><a href="Shoes.html">Shoes</a></li>
+			 <li><a href="caps.html">Caps</a></li>
+			 <li><a href="contact.html">Contact</a></li>
+			 <li><a href="account.html">Log out</a></li>
+			</ul>
+		</nav>
+			<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+			<img src="images/menu.png" class="menu-icon" onClick="menutoggle()">
+	</div>
+	
+	</div>
+	
+<!---------- single product details-3-------------->
+	
+	<div class="small-container single-product">
+		<div class="col-2">
+		     <blockquote>
+		       <p><a href="Shoes.html">Back</a></p>
+             </blockquote>
+           </div>
+	  <div class="row">
+    <div class="product-container">
+        <div class="product-image-container">
+            <img src="images/shoes-1.png" width="50%" id="ProductImg-3" class="product-image">
+        </div>
+
+        <div class="product-details">
+             <h1>Nike Air Force</h1>
+		   <h4>RM375.00</h4>
+            
+            <div class="product-details">
+    <!-- ... (existing code) ... -->
+    <form action="shoes-1.php" method="post">
+        <input type="hidden" name="product_id" value="1">
+        <input type="number" name="quantity" value="1">
+        <button type="submit" class="btn">Add To Cart</button>
+    </form></div>
+
+            <h3>Product Details <i class="fa fa-ident"></i></h3>
+           <p>The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.
+			</p>
+        </div>
+    </div>
+</div>
+
+	</div>
+	
+	
+	
+	
+	
+<!---------------footer--------->
+	
+	<div class="footer">
+	<div class="container">
+		
+		<hr>
+		<p class="copyright">Copyright 2023 - Luq(21B08I006)</p>
+		</div>
+	</div>
+	<!---------------js for toggle menu--------->
+	<script>
+	var MenuItems = document.getElementById("MenuItems");
+	
+		MenuItems.style.maxHeight = "0px";
+		
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+		}
+	</script>
+	
+		<!---------------js for product gallery--------->
+		
+		<script>
+		var ProductImg = document.getElementById("ProductImg-3");
+		var SmallImg = document.getElementsByClassName("small-img");
+			
+			 SmallImg[0].onclick = function()
+			 {
+				 ProductImg.src =  SmallImg[0].src;
+			 }
+			  SmallImg[1].onclick = function()
+			 {
+				 ProductImg.src =  SmallImg[1].src;
+			 }
+			  SmallImg[2].onclick = function()
+			 {
+				 ProductImg.src =  SmallImg[2].src;
+			 }
+			  SmallImg[3].onclick = function()
+			 {
+				 ProductImg.src =  SmallImg[3].src;
+			 }
+		</script>
+			
+		
+</body>
+</html>

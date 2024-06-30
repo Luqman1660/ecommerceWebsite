@@ -1,0 +1,86 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #555;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Delete link styling */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------delete-btn----------------*/
+
+  
+  .delete-btn {
+    position: absolute;
+    right: 20px;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #563434;
+  }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+
+.logout-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logout-icon {
+    width: 30px;
+    height: 30px;
+}
