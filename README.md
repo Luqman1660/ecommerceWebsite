@@ -1,0 +1,1 @@
+The project for Assignment 3 in the Web Analysis and Design subject involves developing an e-commerce website specializing in the sale of shirts, shoes, and caps. This comprehensive project requires the application of web design principles and analytical techniques to create a user-friendly, visually appealing, and functional online shopping platform.
